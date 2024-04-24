@@ -6,6 +6,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'TESTE DEPLOY';
+    return 'TESTE DEPLOY!!!';
   }
 }
