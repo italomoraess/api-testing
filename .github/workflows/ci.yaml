@@ -19,13 +19,11 @@ jobs:
           host: 172.233.1.8
           username: root
           password: I059741h-talo
+          key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDcSQFQjYabb2lSsoIcDgGcCr+r3xdGDFWCWPpfAnSjjIftvYDVNkdMAq/xWtmn8r3xg7RV6gMPZ4IC5VCL844FRtd27noLWCu81ULOvcIVhHjq86atdIjENKa7JHdewF5qILfqGh+NEux62kwpK4bLnly64AGE9oC5PaaQv4UVDJxoNPV2u3h82sc69g8D+KxZi7keaL2K1WZxudtvQnCQq54s1BXKjVclDic5wkDJF0g52bG6MamMEzYvrKiKnOjOslUD/mV3oInJebXJYP4wXlSVJRol5vSOF7bEmoCP+qIjOxHB7OyHoeGOpCjp2KPJI4xumdvoBJUbDbGf6ujl6s/act+Qc5GC1L1CekzebWHutKszvap2iRNegY+85GIakMjmA4kNBnHzCD/+LX8JioAVGLpT3dG5LUjSaJDdWm1y1/JTZjCH2eFS0FmLweKsWCJunlZY2nx0fh8MdvcPqpypt5+AJlEI3hJ2C3WA5t8jswFpvuaTvh0ZVFdPcJIlM1T+JwS2XhhA4gh5m5O0HjfkWCMx5Fa+jwnM5XHq3UMkrL+QXdk2WJCRPPyA9y/Fl/4inTdiESAnftBzGTuvH4OrcrmmPhFjkCbiluq9rxmUUienjwXxeDsdgqLwcC8btaH+IKJi1EhTj4J0H3mGTE2sMOtCulqvKdQ/m0TktQ== italomoraes.sth@gmail.com
           script: |
             cd /root/api-testing
             git pull
-
             npm start
             # docker build -t api-test .
             # docker-compose down
             # docker-compose up -d
-
-            echo "Conexão SSH estabelecida com sucesso!"
