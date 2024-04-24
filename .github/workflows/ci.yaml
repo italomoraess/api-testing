@@ -23,7 +23,6 @@ jobs:
           script: |
             cd /root/api-testing
             git pull
-            npm start
-            # docker build -t api-test .
-            # docker-compose down
-            # docker-compose up -d
+            docker build -t api-test .
+            docker-compose down
+            docker-compose up -d
