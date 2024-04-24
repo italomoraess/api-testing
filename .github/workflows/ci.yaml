@@ -20,6 +20,11 @@ jobs:
           username: root
           password: I059741h-talo
           script: |
-            # Comandos que você deseja executar via SSH
+            cd /root/api-testing
+            git pull
+
+            docker build -t api-test .
+            docker-compose down
+            docker-compose up -d
+
             echo "Conexão SSH estabelecida com sucesso!"
-            # Adicione mais comandos aqui, se necessário
